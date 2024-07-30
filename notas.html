@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación de las Notas Musicales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .note {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #e7f3e7;
+            border: 1px solid #4CAF50;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .note:hover {
+            transform: scale(1.1);
+        }
+
+        .note p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .note img {
+            display: block;
+            margin: 10px auto;
+            width: 60px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Notas Musicales</h1>
+    </header>
+
+    <div class="content">
+        <h2>Introducción</h2>
+        <p>Las notas musicales son los símbolos que utilizamos para representar los sonidos en la música. Cada nota tiene un nombre y una posición específica en el pentagrama, y cada una representa una frecuencia o tono específico. Las notas básicas en la música occidental son:</p>
+
+        <div class="note" onclick="playNote('do')">
+            <p>Do</p>
+              <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\do.jpg" alt="Imagen" id="miImagen" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\do.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('re')">
+            <p>Re</p>
+               <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\re.jpg" alt="Imagen" id="miImagen3" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido3" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\re.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('mi')">
+            <p>Mi</p>
+             <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\mi.jpg" alt="Imagen" id="miImagen2" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido2" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\mi.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('fa')">
+            <p>Fa</p>
+            <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\fa.jpg" alt="Imagen" id="miImagen4" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido4" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\fa.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('sol')">
+            <p>Sol</p>
+                       <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\sol.jpg" alt="Imagen" id="miImagen5" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido5" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\sol.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('la')">
+            <p>La</p>
+                       <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\la.jpg" alt="Imagen" id="miImagen6" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido6" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\la.mp3"></audio>
+        </div>
+        <div class="note" onclick="playNote('si')">
+            <p>Si</p>
+                       <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\si.jpg" alt="Imagen" id="miImagen7" style="width: 100px; cursor: pointer;">
+              <audio id="miSonido7" src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\sonidos\si.mp3"></audio>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>El Pentagrama</h2>
+        <p>El pentagrama es un conjunto de cinco líneas y cuatro espacios donde se escriben las notas musicales. La posición de una nota en el pentagrama indica su altura (qué tan aguda o grave es). Aquí tienes un ejemplo de cómo se ven las notas en el pentagrama:</p>
+        <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\pentagrama2.png" alt="Pentagrama con notas" style="display: block; margin: 20px auto; width: 80%;">
+    </div>
+
+    <div class="content">
+        <h2>Claves Musicales</h2>
+        <p>Las claves musicales nos ayudan a determinar el nombre y la altura de las notas en el pentagrama. Las dos claves más comunes son:</p>
+        <ul>
+            <li><strong>Clave de Sol:</strong> Se coloca en la segunda línea del pentagrama y determina que esa línea es la nota Sol.</li>
+            <li><strong>Clave de Fa:</strong> Se coloca en la cuarta línea del pentagrama y determina que esa línea es la nota Fa.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Mi Sitio Web de Piano. Todos los derechos reservados.
+</footer>
+
+  <script>
+        document.getElementById('miImagen').addEventListener('click', function() {
+            document.getElementById('miSonido').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen2').addEventListener('click', function() {
+            document.getElementById('miSonido2').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen3').addEventListener('click', function() {
+            document.getElementById('miSonido3').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen4').addEventListener('click', function() {
+            document.getElementById('miSonido4').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen5').addEventListener('click', function() {
+            document.getElementById('miSonido5').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen6').addEventListener('click', function() {
+            document.getElementById('miSonido6').play();
+
+        });
+    </script>
+
+  <script>
+document.getElementById('miImagen7').addEventListener('click', function() {
+            document.getElementById('miSonido7').play();
+
+        });
+    </script>
+
+
+</body>
+</html>
+

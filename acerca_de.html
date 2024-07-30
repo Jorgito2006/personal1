@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mí - Mi Sitio Web de Piano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-style: italic;
+            color: #666;
+        }
+
+        .description {
+            text-align: justify;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .levels {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .levels h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .level-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .level {
+            width: calc(33.333% - 20px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .level:hover {
+            transform: translateY(-10px);
+        }
+
+        .level:nth-of-type(1):hover {
+            background-color: #f7df1e;
+        }
+
+        .level:nth-of-type(2):hover {
+            background-color: #29b6f6;
+        }
+
+        .level:nth-of-type(3):hover {
+            background-color: #66bb6a;
+        }
+
+        .level h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .level p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        footer:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Acerca de Mí - Mi Sitio Web de Piano</h1>
+    </header>
+
+    <div class="profile">
+        <img src="C:\Users\jorge\OneDrive\Documents\Diseño_Web\Index_Personal\Imagenes\yop.jpg" alt="Imagen de perfil">
+        <h2>Jorge Izaguirre</h2>
+        <p>Fundador y Profesor de Piano</p>
+    </div>
+
+    <div class="description">
+        <p>Hola, ¡bienvenido a mi página web! Mi nombre es Jorge Daniel Izaguirre y soy un apasionado pianista y profesor de piano con más de 6 años de experiencia enseñando a personas de todas las edades y niveles de habilidad.</p>
+        
+        <p>Desde que era joven, la música ha sido una parte integral de mi vida. A través del piano, he descubierto una forma única de expresión y creatividad que me ha llevado a explorar diversos estilos y géneros musicales.</p>
+        
+        <p>En mi sitio web, encontrarás recursos útiles, lecciones en video, partituras y consejos prácticos para ayudarte a aprender y mejorar tu habilidad en el piano. Mi objetivo es hacer que el aprendizaje del piano sea accesible y divertido para todos, ¡así que no importa si eres un principiante completo o un pianista experimentado, siempre hay algo nuevo por descubrir!</p>
+        
+        <p>Si tienes alguna pregunta o estás interesado en tomar clases de piano conmigo, no dudes en ponerte en contacto. Estoy aquí para ayudarte en tu viaje musical.</p>
+    </div>
+
+    <div class="levels">
+        <h2>Niveles de Aprendizaje</h2>
+        <div class="level-list">
+            <div class="level">
+                <h3>Principiante</h3>
+                <p>En este nivel, aprenderás los fundamentos del piano, incluyendo la posición correcta de las manos, la lectura de notas básicas y los acordes simples.</p>
+            </div>
+            <div class="level">
+                <h3>Intermedio</h3>
+                <p>En el nivel intermedio, mejorarás tus habilidades técnicas y aprenderás a tocar piezas más complejas, incluyendo escalas, arpegios y obras clásicas.</p>
+            </div>
+            <div class="level">
+                <h3>Maestro</h3>
+                <p>En el nivel de maestro, perfeccionarás tu técnica y explorarás una amplia variedad de estilos musicales, incluyendo jazz, blues, y composición propia.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Mi Sitio Web de Piano. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
